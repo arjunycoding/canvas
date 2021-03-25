@@ -2,13 +2,35 @@
 <html>
 <head>
  <title>Avatar Maker</title>
+ <link rel="stylesheet" href="canvas.css">
+     <!-- Google Fonts -->
+     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
+
+     <!-- CSS Reset -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+ 
+     <!-- Milligram CSS -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css">
+ 
+     <!-- You should properly set the path from the main file. -->
 </head>
 <body>
- <canvas id="canvas" width="400" height="400"></canvas>
- <canvas id="canvasSnowman"></canvas>
- <script src="https://code.jquery.com/jquery-2.1.0.js"></script>
- <script src = "main.js"></script>
- <script src = "canvasLib.js"></script>
- <script src = "snowman.js"></script>
+    <div class = "all">
+        <h2 class = "heading">Make A Self Protait!</h2>
+        Eye Color: <input type="text" name="eyecolor" id="eyecolor"></br></br>
+        Shirt Color: <input type="text" name="shirtColor" id="shirtColor"></br></br>
+        Skin Color: <input type="text" name="skincolor" id="skincolor"></br></br>
+        Pant's Color: <input type="text" name="pantcolor" id="pantcolor"></br></br>
+        Sky Color: <input type="text" name="skycolor" id="skycolor"></br></br>
+        <button onclick = "showHuman()">Submit</button>
+        </br>
+        </br>
+        <canvas id="canvas"width="150" height="450" style="border:1px solid"></canvas>
+        <canvas id="canvasSnowman"></canvas>
+        <script src="https://code.jquery.com/jquery-2.1.0.js"></script>
+        <script src = "main.js"></script>
+        <script src = "canvasLib.js"></script>
+        <script src = "snowman.js"></script>
+    </div>
 </body>
 </html>
